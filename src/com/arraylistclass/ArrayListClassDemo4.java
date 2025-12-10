@@ -14,6 +14,7 @@ public class ArrayListClassDemo4 {
 		list.add(null);
 		list.add(null);
 //		list.clear();
+		
 		list.ensureCapacity(3);
 		System.out.println(list.size());
 		System.out.println(list.get(1));

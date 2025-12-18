@@ -22,7 +22,15 @@ public class PriorityQueueDemo {
 		// only same type of elements
 		// elements of subType of Comparable or COmparator
 		
-		PriorityQueue pq = new PriorityQueue();
+		
+//		  public java.util.PriorityQueue();
+//		  public java.util.PriorityQueue(int);
+//		  public java.util.PriorityQueue(java.util.Comparator<? super E>);
+//		  public java.util.PriorityQueue(int, java.util.Comparator<? super E>);
+//		  public java.util.PriorityQueue(java.util.Collection<? extends E>);
+//		  public java.util.PriorityQueue(java.util.PriorityQueue<? extends E>);
+//		  public java.util.PriorityQueue(java.util.SortedSet<? extends E>);
+;		PriorityQueue pq = new PriorityQueue();
 		pq.add("good morning");
 		pq.add("ab");
 //		pq.add(null);
@@ -36,16 +44,26 @@ public class PriorityQueueDemo {
 		pq1.add(13);
 		pq1.add(13);
 		pq1.add(10);
+		pq1.offer(120);
+		pq1.offer(120);
+		System.out.println("*********\n");
+		System.out.println(pq1);
+		System.out.println(pq1.peek());
+		System.out.println(pq1);
+		System.out.println(pq1.poll());
+		System.out.println(pq1);
 //		pq1.add("test");
 		System.out.println(pq1);
 
 		PriorityQueue pq2 = new PriorityQueue();
+		System.out.println("*******\n");
 //		pq2.add(new Hello());
 		pq2.add(new Hi());
 //		pq2.add(11);
 //		pq2.add(45);
 		pq2.add(new Hi());
 		System.out.println(pq2);
+		
 
 	}
 }

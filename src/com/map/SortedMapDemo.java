@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class SortedMapDemo {
 	public static void main(String[] args) {
 		TreeMap tm = new TreeMap();
-		
+
 		tm.put(10, "hello");
 		tm.put(155, "come on");
 		tm.put(160, "balle");
@@ -18,7 +18,7 @@ public class SortedMapDemo {
 		tm.put(51, 5100);
 		tm.put(31, 3100);
 		tm.put(21, 21000);
-		
+
 		System.out.println(tm);
 		System.out.println(tm.ceilingKey(500));
 		System.out.println(tm.ceilingEntry(123));
@@ -48,11 +48,11 @@ public class SortedMapDemo {
 		System.out.println(tm.navigableKeySet());
 		System.out.println(tm.pollFirstEntry());
 		System.out.println(tm.pollLastEntry());
-		System.out.println(tm.subMap(31,51));
+		System.out.println(tm.subMap(31, 51));
 		System.out.println(tm.subMap(501, false, 801, true));
 		System.out.println(tm.tailMap(401));
 		System.out.println(tm.tailMap(601, false));
 		System.out.println(tm);
-		
+
 	}
 }
